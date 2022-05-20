@@ -6,8 +6,8 @@ message CordinateRequest {
 }
 message CoordinateResponse {
 
-      double CoordinateData =1;
-      double lat_longi = 2; 
+      string CoordinateData =1;
+      
 }
 service Coordinateservice{
 
