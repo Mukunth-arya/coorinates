@@ -1,0 +1,15 @@
+syntax = "proto3";
+message CordinateRequest {
+
+     string  city = 1;
+
+}
+message CoordinateResponse {
+
+      double CoordinateData =1;
+      double lat_longi = 2; 
+}
+service Coordinateservice{
+
+    rpc Coordinatedata(CordinateRequest)returns (CoordinateResponse);
+}
